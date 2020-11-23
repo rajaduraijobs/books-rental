@@ -1,6 +1,5 @@
 const {Book, validate} = require('../models/book'); 
 const isValidObjectId = require('../validations/objectId');
-const isUnique = require('../validations/unique');
 const auth = require('../middlewares/auth');
 const {Genre} = require('../models/genre');
 const express = require('express');
@@ -15,8 +14,8 @@ router.post('/', auth, async (req, res) => {
   const { error } = validate(req.body); 
   if (error) return res.status(400).send(error.details);
 
-  const isExist = await isUnique(req.body.name, Book);
-  if(isExist) return res.status(400).send({message: 'Name already exist'});
+  const isExist = await Book.findOne({ title: req.body.title });
+  if(isExist) return res.status(400).send({message: 'Title already exist'});
 
   const genre = await Genre.findById(req.body.genreId);
   if (!genre) return res.status(400).send('Invalid genre.');

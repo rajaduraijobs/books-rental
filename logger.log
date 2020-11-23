@@ -31,3 +31,8 @@
 {"level":"info","message":"Listening on port 3000...","timestamp":"2020-11-23T00:48:00.701Z"}
 {"message":"FATAL Error: JWT Keys are not set","stack":"Error: FATAL Error: JWT Keys are not set\n    at module.exports (C:\\Users\\Rajadurai\\node-apps\\books-rental\\startups\\config.js:9:15)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)","level":"error","timestamp":"2020-11-23T00:48:00.721Z"}
 {"level":"info","message":"Connected to MongoDB...","timestamp":"2020-11-23T00:48:00.763Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-11-23T09:26:38.877Z"}
+{"message":"FATAL Error: JWT Keys are not set","stack":"Error: FATAL Error: JWT Keys are not set\n    at module.exports (C:\\Users\\Rajadurai\\node-apps\\books-rental\\startups\\config.js:9:15)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)","level":"error","timestamp":"2020-11-23T09:26:38.885Z"}
+{"level":"info","message":"Connected to MongoDB...","timestamp":"2020-11-23T09:26:38.966Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-11-23T09:27:49.985Z"}
+{"level":"info","message":"Connected to MongoDB...","timestamp":"2020-11-23T09:27:50.023Z"}
